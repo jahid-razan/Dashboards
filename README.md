@@ -71,7 +71,7 @@ Most problems related to product stock can be solved by joining the api tables.
 ![](api_tables_ERD.PNG) 
   
 
- Also, some temporary tables has been created to solve the questions related to minimum order quantity, minimum desired quantity, super sales items and automatisch uitschakelen products. 
+ Also, some temporary tables has been created to solve the questions related to minimum order quantity, minimum desired quantity, super sales items and automatisch uitschakelen products.Please note that, these tables have been created using data from google sheet. Also, it is important to note that a table created from the import of data can not be directly imported to tableau and therefore, after the first table, the a query has been made the resuling data is saved as the bigquery table with a name: _for_purchase and imported in the tableau analysis.
  
 ![](purchase_table_and_products_ERD.PNG) 
 
