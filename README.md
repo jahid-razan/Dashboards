@@ -43,13 +43,13 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
 
    • Every product has a manufacturer and belong to a category.
    
-   • Product can have one default supplier, no default supplier (in this case purchased from multiple suppliers).
+   • Product can have one default supplier, no default supplier or multiple suppliers (no supplier is a default supplier).
    
    • Every product have multiple classifications.
    
-   • Some products are parent products and have child items.
+   • Some products are parent products and they have child items.
    
-   • Some product has the label new (new products).
+   • Some product has the label 'new' (new products).
    
    • Every product with a sellable stock has a product history. 
 
