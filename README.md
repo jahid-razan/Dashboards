@@ -52,13 +52,21 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
    • Some product has the label 'new' (new products).
    
    • Every product with a sellable stock has a product history. 
+   
+  It is important to note that the api.products table updated hourly during the day.
 
 ![](conceptual_ERD.PNG) 
 
 
   • Revenue and product tables are connected via product id. Product information missing in the revenue tables (such as product classification) can be added by joining the revenue tables with the products table. The easiest way to obtain the missing product information is often  by joining tables through the product tables via the key- which is product_id
 
-All the business questions related to revenue, order, shipping method, and contribution margin can be answered based on the 3 tables. 
+  • All the business questions related to revenue, order, shipping method, and contribution margin can be answered based on the 3 tables. 
+ 
+  • FULL HISTORY table contains all the sales history since 2018 and updated daily (3 am in the morning).
+  
+  • LM table keeps the data of the last month and updated hourly.
+    
+  • LTM table keeps the data of the last 12 months and updated daily (3 am in the morning).
   
   ![](product_and_revenue_tables_conceptual_ERD.PNG) 
 
