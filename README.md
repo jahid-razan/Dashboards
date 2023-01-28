@@ -1,4 +1,4 @@
-# List of dashboards for purchase
+# 1. List of dashboards for purchase
 
 Below is a list of the dashbaord/report that are currently in use by the purchase and category management team. 
 
