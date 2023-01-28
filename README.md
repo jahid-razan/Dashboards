@@ -37,3 +37,14 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 #### 8. [CM Calcuation](https://dub01.online.tableau.com/#/site/hblonlinesite/views/CM_Calculation_including_Amazon/Cost_Dashboard?:iid=1) Dashboard. 
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
+
+# 2. Conceptual ERD:
+
+Every product has a manufacturer and belong to a category.
+Product can have one default supplier, no default supplier (in this case purchased from multiple suppliers)
+Every product have multiple classifications
+Some products are parent products and have child items
+Some product has the label new (new products).
+Every product with a sellable stock has a product history. 
+
+
