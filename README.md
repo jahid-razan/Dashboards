@@ -22,6 +22,6 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/P
 7. [Overstock List](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Overstockproductlistallproducts/OVERSTOCK_LIST?:iid=2)
 
 
-8. [CM Calcuation](https://dub01.online.tableau.com/#/site/hblonlinesite/views/CM_Calculation_including_Amazon/Cost_Dashboard?:iid=1)
-
-The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql)
+8. [CM Calcuation](https://dub01.online.tableau.com/#/site/hblonlinesite/views/CM_Calculation_including_Amazon/Cost_Dashboard?:iid=1) Dashboard. 
+   
+   The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql)
