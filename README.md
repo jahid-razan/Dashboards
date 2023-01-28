@@ -60,7 +60,7 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
 
 
   
-  ![](product_and_revenue_tables_conceptual_ERD) 
+  ![](product_and_revenue_tables_conceptual_ERD.PNG) 
 
 
 
