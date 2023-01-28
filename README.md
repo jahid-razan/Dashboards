@@ -39,6 +39,8 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
 
 # 2. Conceptual ERD:
+The [Conceptual ERD](https://github.com/jahidrazan/Dashboards/blob/main/conceptual_ERD.PNG) is a good starting point to understand the relationship between products table and other associated information related to products:
+
 
 Every product has a manufacturer and belong to a category.
 Product can have one default supplier, no default supplier (in this case purchased from multiple suppliers)
@@ -46,5 +48,7 @@ Every product have multiple classifications
 Some products are parent products and have child items
 Some product has the label new (new products).
 Every product with a sellable stock has a product history. 
+
+
 
 
