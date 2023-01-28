@@ -38,7 +38,7 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
 
-# 2. Conceptual ERD:
+# 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
 
    • Every product has a manufacturer and belong to a category.
@@ -64,7 +64,7 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
 
 
 
-# 2. ERD:
+# 2. DATA MODELS:
 
 Most problems related to product stock can be solved by joining the api tables.
 
@@ -72,7 +72,9 @@ Most problems related to product stock can be solved by joining the api tables.
   
  Also, some temporary tables has been created to solve the questions related to minimum order quantity, minimum desired quantity, super sales items and automatisch uitschakelen products. 
  
-![](purchase_table_and products_ERD.PNG)
+ 
+   ![](purchase_table_and products_ERD.PNG) 
+
 
 
 
