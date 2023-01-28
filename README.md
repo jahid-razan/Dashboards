@@ -39,7 +39,7 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
 
 # 2. Conceptual ERD:
-The Conceptual ERD ![conceptual_ERD.PNG]  is a good starting point to understand the relationship between products table and other associated information related to products:
+The Conceptual ERD ![](conceptual_ERD.PNG) is a good starting point to understand the relationship between products table and other associated information related to products:
 
 
 
