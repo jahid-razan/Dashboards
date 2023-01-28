@@ -9,8 +9,14 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 
 
 
-• The sql code that is used to show the out of stock trends per sales class can be found [here](https://github.com/jahidrazan/Codes/blob/main/Purchase%20Overview%20Dashboard_code_to_calculate_out_of_stock_percentage.sql). 
-• Check-in
+        • The sql code that is used to show the out of stock trends per sales class can be found [here](https://github.com/jahidrazan/Codes/blob/main/Purchase%20Overview%20Dashboard_code_to_calculate_out_of_stock_percentage.sql). 
+        
+        • sql code for calculating stock magento and stock hbs can be found [here](https://github.com/jahidrazan/Codes/blob/main/sql%20code%20for%20calculating%20stock%20magento%20and%20stock%20hbs.sql)
+        
+        • sql code for calculating inbound, ordered and backorder value can be found [here](https://github.com/jahidrazan/Codes/blob/main/sql%20code%20for%20calculating%20the%20value%20of%20inbound%2C%20ordered%20and%20backorder%20value.sql)
+        
+        
+        
 
 
 3. [Last 3 months trend of stock Development per Sales Class](https://dub01.online.tableau.com/#/site/hblonlinesite/views/StockDevlopmentPerSalesClass/StockTrendDashboard?:iid=1)
