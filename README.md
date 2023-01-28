@@ -21,6 +21,8 @@ Please note that- **since we do not purchase the items having an average value l
 
 #### 4. [Weekly Stock Insights Bigquery Dashboard](https://lookerstudio.google.com/reporting/83a55b9f-dcd2-4342-b6c1-863cbc5021f8/page/tNy8B)
 
+This is a data studio dashboard. Primarily used for weekly reporting of data via an excel file. 
+
 #### 5. [Stock Health Per Root Category](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Product_Stock_Inventory_with_Last28_Days_Sales/DashboardTotalValuePerRCANDSALESCLASS?:iid=1)
 
 #### 6. Shipping time per sales class
