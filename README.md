@@ -68,12 +68,12 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
 
 Most problems related to product stock can be solved by joining the api tables.  
 
-  ![](api_tables_ERD.PNG) 
+![](api_tables_ERD.PNG) 
   
 
  Also, some temporary tables has been created to solve the questions related to minimum order quantity, minimum desired quantity, super sales items and automatisch uitschakelen products. 
  
-  ![](purchase_table_and products_ERD.PNG) 
+![](purchase_table_and_products_ERD) 
 
 
 
