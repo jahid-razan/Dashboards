@@ -41,17 +41,17 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
 
-   • Every product has a manufacturer and belong to a category.
+   • Every product has a manufacturer and belong to a category (and root category).
    
    • Product can have one default supplier, no default supplier or multiple suppliers (no supplier is a default supplier).
    
    • Every product have multiple classifications.
    
-   • Some products are parent products and they have child items.
+   • Product may have have a child or may not. Some products are parent products and they have child items.
    
-   • Some product has the label 'new' (new products).
+   • Products may have a level or 'new' or 'default'. 
    
-   • Every product with a sellable stock has a product history. 
+   • Every product with a sellable stock has a product history (starting from Sep 2021). 
    
   It is important to note that the api.products table updated hourly during the day.
 
