@@ -26,7 +26,7 @@ Following formula is used in tableau to calculate the % of sales class A (the sa
         
  To calculate the stock magento value in tableau the following formula has been used :
  
-        • Stock Magento Value = Stock Magento Qty (where qty >0) x net cost of an item 
+        • Stock Magento Value = Stock Magento Qty (where stock magento >0) x net cost of a product
         
         
 #### 3. [Last 3 months trend of stock Development per Sales Class Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/StockDevlopmentPerSalesClass/StockTrendDashboard?:iid=1) (Documentation Status: Complete)
