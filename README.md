@@ -39,7 +39,7 @@ Following formula is used to calculate the % of A products shipped within 0-1 da
 
         • % A products shipped in 0-1 days: Total Number of A products shipped within 0-1 day / Total Number of A products sold
 
-Similar logic is also applicable for calculting the % of products shipped in 0-1 days for any of the specific sales class, calculating the percentage of shipped products within 0-1 days. 
+Similar logic is also applicable for calculting the % of products shipped in 0-1 days for sales class A+, B, C,and D. Also, the same method is used for calculating the percentage of shipped products within 0-1 days. 
 
 To calculate the total number of orders shipped in 0-1 day the following logic is used: 
 
