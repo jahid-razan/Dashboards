@@ -31,17 +31,19 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 
 #### 5. [Stock Health Per Root Category](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Product_Stock_Inventory_with_Last28_Days_Sales/DashboardTotalValuePerRCANDSALESCLASS?:iid=1)
 
-#### 6. [Shipping time per sales class](https://dub01.online.tableau.com/#/site/hblonlinesite/workbooks/1059466/views). 
+#### 6. [Shipping time per sales class](https://dub01.online.tableau.com/#/site/hblonlinesite/workbooks/1059466/views).  (Documentation Status: Complete)
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/shipping_time_and_revenue_per_sales_class.sql).
 
-% A products shipped in 0-1 days : 
+Following formula is used to calculate the % of A products shipped within 0-1 days: 
 
+**% A products shipped in 0-1 days: Total Number of A products shipped within 0-1 day / Total Number of A products sold
 
+Similar logic is also applicable for calculting the % of products shipped in 0-1 days for any of the specific sales class, calculating the percentage of shipped products within 0-1 days. 
 
-COUNT(if ([shipping_period_calc] =  '0-1 day shipping' AND [sales_class] = 'A') THEN   [product_id] END )
+To calculate the total number of orders shipped in 0-1 day the following logic is used: 
 
-/ COUNT(if [sales_class]= 'A' THEN [product_id] END)
+**% of orders shipped in 0-1 day : Total orders shipped within 0-1 day / Total Number of orders
 
 #### 7. [Overstock List](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Overstockproductlistallproducts/OVERSTOCK_LIST?:iid=2)
 
