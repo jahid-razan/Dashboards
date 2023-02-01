@@ -7,7 +7,8 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
 
-#### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. 
+#### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
+ 
 
 sql code that is used to show the out of stock trends per sales class can be found [here](https://github.com/jahidrazan/Codes/blob/main/Purchase%20Overview%20Dashboard_code_to_calculate_out_of_stock_percentage.sql). 
 
@@ -18,12 +19,12 @@ sql code for calculating inbound, received, ordered and backorder value can be f
 Please note that- **since we do not purchase the items having an average value lower than a certain threshold ( avg sales in last 42 days <0.05 which is applicable for C and D products consdiering yearly sales class ), the out of stock trend for those products are not shown in the dashboard**.
 
 
-Following formula is used to calculate the % of sales class A (the same concept is applicable for other sales class) products out of stock: 
+Following formula is used in tableau to calculate the % of sales class A (the same concept is applicable for other sales class) products out of stock: 
 
         • If the stock magento of a product is <= 0 then the product is considered out of stock
         • % A product out of stock: Total Number of A products out of stock / Total Number of A products 
         
- To calculate the stock magento value following formula has been used :
+ To calculate the stock magento value in tableau the following formula has been used :
  
         • Stock Magento Value = Stock Magento Qty (where qty >0) x net cost of an item 
         
@@ -46,13 +47,13 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/shipping_time_and_revenue_per_sales_class.sql).
 
-Following formula is used to calculate the % of A products shipped within 0-1 days: 
+Following formula is used in tableau to calculate the % of A products shipped within 0-1 days: 
 
         • % A products shipped in 0-1 days: Total Number of A products shipped within 0-1 day / Total Number of A products sold
 
 Similar logic is also applicable for calculting the % of products shipped in 0-1 days for sales class A+, B, C,and D. Also, the same method is used for calculating the percentage of shipped products within 0-1 days. 
 
-To calculate the total number of orders shipped in 0-1 day the following logic is used: 
+To calculate the total number of orders shipped in 0-1 day the following logic is used in tableau: 
 
        • % of orders shipped in 0-1 day : Total orders shipped within 0-1 day / Total Number of orders
 
