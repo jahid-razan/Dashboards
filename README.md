@@ -29,7 +29,7 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 
 #### 5. [Stock Health Per Root Category](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Product_Stock_Inventory_with_Last28_Days_Sales/DashboardTotalValuePerRCANDSALESCLASS?:iid=1)
 
-#### 6. Shipping time per sales class
+#### 6. [Shipping time per sales class](https://github.com/jahidrazan/Codes/blob/main/shipping_time_and_revenue_per_sales_class.sql)
 
 #### 7. [Overstock List](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Overstockproductlistallproducts/OVERSTOCK_LIST?:iid=2)
 
