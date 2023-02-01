@@ -31,7 +31,7 @@ This is a data studio dashboard. Primarily used for weekly reporting of data via
 
 #### 6. [Shipping time per sales class](https://dub01.online.tableau.com/#/site/hblonlinesite/workbooks/1059466/views). 
 
-The [sql code] (https://github.com/jahidrazan/Codes/blob/main/shipping_time_and_revenue_per_sales_class.sql) can be found here.
+The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/shipping_time_and_revenue_per_sales_class.sql).
 
 #### 7. [Overstock List](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Overstockproductlistallproducts/OVERSTOCK_LIST?:iid=2)
 
