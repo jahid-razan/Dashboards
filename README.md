@@ -111,3 +111,7 @@ Most problems related to product stock (and the purchase department) can be solv
 
 
 
+# 3. Summary of Purchase Process
+
+1. [Part 1 of Video](https://hblvof-my.sharepoint.com/personal/jahid_islamrazan_fixami_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjahid%5Fislamrazan%5Ffixami%5Fcom%2FDocuments%2FChatbestanden%20van%20Microsoft%20Teams%2FIntroduction%20to%20Purchase%20%2D%20Part%20I%20%281%29%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=p2p%5Fns%2Dbim&ga=1)
+2. [Part 2 of Video](https://hblvof-my.sharepoint.com/personal/jahid_islamrazan_fixami_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjahid%5Fislamrazan%5Ffixami%5Fcom%2FDocuments%2FChatbestanden%20van%20Microsoft%20Teams%2FIntroduction%20to%20Purchase%2D%20Part%202%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=p2p%5Fns%2Dbim&ga=1)
