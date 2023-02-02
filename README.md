@@ -64,6 +64,29 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
 
+  • CS Cost: assigned per order
+  
+  • Marketing Cost: 
+     • A percentage of revenue is assigned per channel for non marketplaces, 
+     • For bol products a specific percentage is assigned per product.  
+     • For ManoMano products following brands have 12% of the line_total_ex_vat : 'DeWALT', 'Makita', 'Metabo', 'Bosch', 'HiKOKI', 'Hitachi' and the rest of the brands have 13% of the line_total_ex_vat
+      • Amazon has a marketing cost of 13.48% of the line_total_ex_vat
+      
+  • Payment Cost: a percentage of revenue is assigned per channel, no payment cost is applicable for marketplaces
+  
+  • WH Cost: assigned per orderline: 
+  
+  • RMA Cost:assigned a percentage of revenue per channel
+  
+  • Shipping Cost: assigned per country, per shipping method, per orderline
+  
+  • RMA related Shipping Cost: a percentage of shipping cost is assigned to calculate the cost: 
+        • RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
+        
+   
+  
+  • Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
+  
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
 
