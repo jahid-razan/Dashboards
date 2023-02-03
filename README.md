@@ -85,10 +85,12 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   * WH Cost
     
     * WH cost per order =  WH_cost_ per_orderline (through tableau parameter) x Order Line
-    * Orderline : Sum of non zero product ids per order id
+    * Order Line : Sum of non zero product ids per order id
+    * WH Cost Per Product = Number of Orders Per Product x WH cost per orderline 
   
   * RMA Cost:
-     * RMA Cost Per Order = Line total Ex Vat x % RMA Cost Per Channel (from tableau parameter)
+     * RMA Cost Per Order = Line total Ex Vat per Order x % RMA Cost Per Channel (from tableau parameter)
+     * RMA Cost Per Product = Line total Ex Vat per product x % RMA Cost Per Channel (from tableau parameter)
   
   * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
 
