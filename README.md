@@ -68,7 +68,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   * Marketing Cost ( applicable only for Product_Id >0):  
     
      
-     * Marketing Cost for webchannel orders =  Marketing cost percentage for a channel (from tableau parameter) * line_total_ex_vat 
+     * Marketing Cost per order (for webchannels) =  Marketing cost percentage for a channel (from tableau parameter) * line_total_ex_vat 
      
      * For bol products a specific percentage is assigned per product. The data per product is available on the following table: *hbl-online.purchase_queries.Jahid_bol_commission*
      
