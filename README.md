@@ -78,13 +78,13 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
      
      * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
-  • Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
+  * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
   
-  • WH Cost: assigned per orderline, through tableau parameter 
+  ** WH Cost: assigned per orderline, through tableau parameter 
   
-  • RMA Cost:assigned a percentage of revenue per channel through tableau parameter
+  * RMA Cost:assigned a percentage of revenue per channel through tableau parameter
   
-  • Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
+  * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
   
   * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
         * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
@@ -95,20 +95,6 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
-
-   • Every product has a manufacturer and belong to a category (and root category).
-   
-   • Product can have one default supplier, no default supplier or multiple suppliers (no supplier is a default supplier).
-   
-   • Every product have multiple classifications.
-   
-   • Product may have have a child or may not. Some products are parent products and they have child items.
-   
-   • Products may have a level or 'new' or 'default'. 
-   
-   • Every product with a sellable stock has a product history (starting from Sep 2021). 
-   
-  It is important to note that the api.products table updated hourly during the day.
 
 ![](conceptual_ERD.PNG) 
 
