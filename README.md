@@ -106,8 +106,9 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
    
   ![](shipping_cost_factors_per_channel.PNG)
   
-  * RMA related Shipping Cost: 
-        * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost (from tableau parameter)
+  * RMA related Shipping Cost
+  
+      * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost (from tableau parameter)
         
   * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
