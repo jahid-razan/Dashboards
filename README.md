@@ -76,8 +76,10 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
      * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
   * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
-     * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost * Revenue Ex Vat 
-     * If the revenue is less than 0 no payment cost, If the revenue is >0 then the revenue is applicable for the payment cost
+  * 
+      * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost x Revenue Ex Vat 
+      
+      * Revenue Applicable For Payment Cost: If the revenue is less than 0 no payment cost, If the revenue is >0 then the revenue is applicable for the payment cost
   
   * WH Cost: assigned per orderline, through tableau parameter 
   
