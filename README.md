@@ -81,6 +81,13 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   * RMA Cost:assigned a percentage of revenue per channel through tableau parameter
   
   * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
+
+                * WHEN website_id = 7 THEN 5.20 #NETHERLANDS
+                * WHEN website_id = 6 THEN 5.95 #BELGIUM
+                * WHEN website_id = 8 THEN 10.55 #FRANCE
+                * WHEN website_id = 3 THEN 11.00 #SPAIN
+                * WHEN website_id = 4 THEN 5.65 #GERMANY
+
   
   ![](shipping_cost_factors_per_channel.PNG)
   
