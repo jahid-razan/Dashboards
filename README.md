@@ -64,10 +64,6 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
   
-  * top level bullet one
-     * sub-bullet  
-     * sub-bullet 2 
-  
 
   * Marketing Cost:  
      * A percentage of revenue is assigned per channel for website channels through tableau parameter
@@ -91,7 +87,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
         
    
  
-  • Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
+  * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
