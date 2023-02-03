@@ -7,6 +7,30 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
 
+* PRIMARY QTY Calculations 
+
+    * CASE 1 - WHEN STOCK MAGENTO > REORDER POINT : PRIMARY QTY = 0 (Also 0 for super sales items, automatishc uitschakalen items and hidden items)
+
+    * CASE 2 - WHEN STOCK MAGENTO <= REORDER POINT: PRIMARY QTY = ORDER DAYS x AVG SALES 
+ 
+
+
+* ORDER QTY CALC
+
+  * CASE 1 : WHEN STOCK MAGENTO > 0: ORDER QTY = PRIMARY QTY - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+
+  * CASE 2: WHEN STOCK MAGENTO < 0: ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+
+
+* ORDER QTY SEASONAL = ORDER QTY + ORDER QTY x SEASONAL CORRECTION FACTOR
+
+* MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
+
+* ORDER QTY =  MOQ Unit x MOQ
+
+* ORDER VALUE =  PER UNIT COST x ORDER QTY 
+
+
 #### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
  
 
