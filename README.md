@@ -85,7 +85,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
   * WH Cost: assigned per orderline, through tableau parameter 
     
-    * To calculate the WH cost per order: WH_cost_ per_orderline X Order Line
+    * To calculate the WH cost per order: WH_cost_ per_orderline x Order Line
     * Orderline : Sum of non zero product ids per order id
   
   * RMA Cost:assigned a percentage of revenue per channel through tableau parameter
