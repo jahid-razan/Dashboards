@@ -67,10 +67,10 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   • CS Cost: assigned per order
   
   • Marketing Cost: 
-     • A percentage of revenue is assigned per channel for non marketplaces, 
-     • For bol products a specific percentage is assigned per product.  
-     • For ManoMano products following brands have 12% of the line_total_ex_vat : 'DeWALT', 'Makita', 'Metabo', 'Bosch', 'HiKOKI', 'Hitachi' and the rest of the brands have 13% of the line_total_ex_vat
-      • Amazon has a marketing cost of 13.48% of the line_total_ex_vat
+         • A percentage of revenue is assigned per channel for non marketplaces, 
+         • For bol products a specific percentage is assigned per product.  
+         • For ManoMano products following brands have 12% of the line_total_ex_vat : 'DeWALT', 'Makita', 'Metabo', 'Bosch', 'HiKOKI', 'Hitachi' and the rest of the brands have 13% of the line_total_ex_vat
+          • Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
   • Payment Cost: a percentage of revenue is assigned per channel, no payment cost is applicable for marketplaces
   
