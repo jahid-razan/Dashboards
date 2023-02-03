@@ -66,8 +66,10 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
 
   * Marketing Cost:  
+    
      * A percentage of revenue is assigned per channel for website channels through tableau parameter
-     * The following logic is used to calculate the marketing cost:  If [Product Id] >0 THEN  Market cost percentage for the channel * Revenue Ex Vat 
+     
+     * The following logic is used to calculate the marketing cost:  If Product_Id >0 THEN  Marketing cost percentage for a channel * line_total_ex_vat 
      
      * For bol products a specific percentage is assigned per product. The data per product is available on the following table: `hbl-online.purchase_queries.Jahid_bol_commission
      
@@ -77,7 +79,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
       
   * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
   
-      * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost x Revenue Ex Vat 
+      * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost x line_total_ex_vat 
       
       * Revenue Applicable For Payment Cost: If the revenue is less than 0 no payment cost, If the revenue is >0 then the revenue is applicable for the payment cost
   
