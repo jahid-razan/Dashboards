@@ -68,30 +68,29 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
      * sub-bullet  
      * sub-bullet 2 
   
-  
-  • Marketing Cost:  
-  
-  * top level bullet one
-     * sub-bullet  
-     * sub-bullet 2 
-     * A percentage of revenue is assigned per channel for non marketplaces, 
-     * For bol products a specific percentage is assigned per product.  
-     * For ManoMano products following brands have 12% of the line_total_ex_vat : 'DeWALT', 'Makita', 'Metabo', 'Bosch', 'HiKOKI', 'Hitachi' and the rest of the brands have 13% of the line_total_ex_vat
+
+  * Marketing Cost:  
+     * A percentage of revenue is assigned per channel for website channels through tableau parameter
+     
+     * For bol products a specific percentage is assigned per product. The data per product is available on the following table: `hbl-online.purchase_queries.Jahid_bol_commission
+     
+     * For ManoMano products from DeWALT, Makita, Metabo,Bosch,HiKOKI, and Hitachi have 12% of the line_total_ex_vat. The rest of the brands have 13% of the line_total_ex_vat
+     
      * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
-  • Payment Cost: a percentage of revenue is assigned per channel, no payment cost is applicable for marketplaces
+  • Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
   
-  • WH Cost: assigned per orderline: 
+  • WH Cost: assigned per orderline, through tableau parameter 
   
-  • RMA Cost:assigned a percentage of revenue per channel
+  • RMA Cost:assigned a percentage of revenue per channel through tableau parameter
   
-  • Shipping Cost: assigned per country, per shipping method, per orderline
+  • Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
   
-  • RMA related Shipping Cost: a percentage of shipping cost is assigned to calculate the cost: 
-        • RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
+  * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
+        * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
         
    
-  
+ 
   • Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
 # 2. Conceptual ERD
