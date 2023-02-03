@@ -7,7 +7,7 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
 
-* PRIMARY QTY Calculations 
+* PRIMARY QTY
 
     * CASE 1 - WHEN STOCK MAGENTO > REORDER POINT THEN PRIMARY QTY = 0 (Also 0 for super sales items, automatishc uitschakalen items and hidden items)
 
