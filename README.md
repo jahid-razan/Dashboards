@@ -63,7 +63,12 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 #### 8. [CM Calcuation](https://dub01.online.tableau.com/#/site/hblonlinesite/views/CM_Calculation_including_Amazon/Cost_Dashboard?:iid=1) Dashboard. 
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
-
+  
+  * top level bullet one
+     * sub-bullet  
+     * sub-bullet 2 
+  
+  
   • CS Cost: assigned per order
   
   * Marketing Cost: 
