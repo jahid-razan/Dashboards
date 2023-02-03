@@ -82,12 +82,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
   * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
 
-                * WHEN website_id = 7 THEN 5.20 #NETHERLANDS
-                * WHEN website_id = 6 THEN 5.95 #BELGIUM
-                * WHEN website_id = 8 THEN 10.55 #FRANCE
-                * WHEN website_id = 3 THEN 11.00 #SPAIN
-                * WHEN website_id = 4 THEN 5.65 #GERMANY
-
+  The details of the shipping cost per channel per method can be found on [table t4 in the sql code](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql)
   
   ![](shipping_cost_factors_per_channel.PNG)
   
