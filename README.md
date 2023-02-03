@@ -67,6 +67,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
 
   * Marketing Cost:  
      * A percentage of revenue is assigned per channel for website channels through tableau parameter
+     * The following logic is used to calculate the marketing cost:  If [Product Id] >0 THEN  Market cost percentage for the channel * Revenue Ex Vat 
      
      * For bol products a specific percentage is assigned per product. The data per product is available on the following table: `hbl-online.purchase_queries.Jahid_bol_commission
      
@@ -75,6 +76,8 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
      * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
   * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
+     * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost * Revenue Ex Vat 
+     * If the revenue is less than 0 no payment cost, If the revenue is >0 then the revenue is applicable for the payment cost
   
   * WH Cost: assigned per orderline, through tableau parameter 
   
@@ -84,6 +87,16 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
 
   The details of the shipping cost per channel per method can be found on [table t4 in the sql code](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql)
   
+  For non pallets shipping the shipping cost depends on the order line. Orderline to calculate the shipping cost is defined in tableau calculated field (name of the field: Single_Or_Multi_Line) 
+  
+  The definition is based on the following logic: Without considering the negative product ids:
+  
+  * If an order has 1 product id and a single quantity is sold then it is a Single line order
+  * If an order has 1 product id and more than a single quantity is sold then it is a Single line order
+  * If an order has more than 1 product id and more than a single quantity is sold then it is a Multi line order
+  
+  Depending on the 
+   
   ![](shipping_cost_factors_per_channel.PNG)
   
   * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
