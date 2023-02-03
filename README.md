@@ -76,7 +76,7 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
       
   * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
   
-  ** WH Cost: assigned per orderline, through tableau parameter 
+  * WH Cost: assigned per orderline, through tableau parameter 
   
   * RMA Cost:assigned a percentage of revenue per channel through tableau parameter
   
@@ -85,8 +85,6 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
         * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
         
-   
- 
   * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
 # 2. Conceptual ERD
