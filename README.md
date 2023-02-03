@@ -29,6 +29,8 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 * ORDER VALUE =  PER UNIT COST x ORDER QTY 
 
+* ACTION
+
 
 #### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
  
