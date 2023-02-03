@@ -82,6 +82,8 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
   * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
   
+  ![](shipping_cost_factors_per_channel.PNG)
+  
   * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
         * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
         
