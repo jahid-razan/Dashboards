@@ -65,32 +65,30 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
   
 
-  * Marketing Cost:  
+  * Marketing Cost ( applicable only for Product_Id >0):  
     
-     * A percentage of revenue is assigned per channel for website channels through tableau parameter
      
-     * The following logic is used to calculate the marketing cost:  If Product_Id >0 THEN  Marketing cost percentage for a channel * line_total_ex_vat 
+     * Marketing Cost for webchannel orders =  Marketing cost percentage for a channel (from tableau parameter) * line_total_ex_vat 
      
-     * For bol products a specific percentage is assigned per product. The data per product is available on the following table: `hbl-online.purchase_queries.Jahid_bol_commission
+     * For bol products a specific percentage is assigned per product. The data per product is available on the following table: *hbl-online.purchase_queries.Jahid_bol_commission*
      
-     * For ManoMano products from DeWALT, Makita, Metabo,Bosch,HiKOKI, and Hitachi have 12% of the line_total_ex_vat. The rest of the brands have 13% of the line_total_ex_vat
+     * For ManoMano products from DeWALT, Makita, Metabo, Bosch, HiKOKI, and Hitachi have 12% of the line_total_ex_vat. The rest of the brands have 13% of the line_total_ex_vat
      
      * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
       
   * Payment Cost: a percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces
   
-      * The following logic is used to calculate the Payment Cost for web channels:  Revenue Applicable For Payment Cost x line_total_ex_vat 
+      * Payment Cost =  Revenue Applicable For Payment Cost from the web channel x line_total_ex_vat 
       
-      * Revenue Applicable For Payment Cost: If the revenue is less than 0 no payment cost, If the revenue is >0 then the revenue is applicable for the payment cost
+      * Revenue Applicable For Payment Cost: Revenue Ex Vat >0 condition must be met
   
-  * WH Cost: assigned per orderline, through tableau parameter 
+  * WH Cost
     
-    * To calculate the WH cost per order: WH_cost_ per_orderline x Order Line
+    * WH cost per order =  WH_cost_ per_orderline (through tableau parameter) x Order Line
     * Orderline : Sum of non zero product ids per order id
   
-  * RMA Cost:assigned a percentage of revenue per channel through tableau parameter
-
-     * RMA Cost Per Order = Line total Ex Vat x % RMA Cost Per Channel
+  * RMA Cost:
+     * RMA Cost Per Order = Line total Ex Vat x % RMA Cost Per Channel (from tableau parameter)
   
   * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
 
@@ -108,8 +106,8 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
    
   ![](shipping_cost_factors_per_channel.PNG)
   
-  * RMA related Shipping Cost: a percentage of shipping cost is assigned through tableau parameter
-        * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost
+  * RMA related Shipping Cost: 
+        * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost (from tableau parameter)
         
   * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
