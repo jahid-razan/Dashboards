@@ -111,6 +111,8 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
         
   * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
   
+  * CM per Order = Margin Total Net -  Total Cost
+  
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
 
