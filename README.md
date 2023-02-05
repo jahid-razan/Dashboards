@@ -18,7 +18,9 @@ The sql code used to generate the purchase list can be found [here](https://gith
           
 Step 3 : Gather Products and product Information 
 
-     * Gather all the information related to products from different tables such as product name, manufacturer, suppliers, product sales in the last 42 days and year, average sales of the product in the last 7 days, 42 days and last year, category, root category, supplier etc. 
+     * Gather all the information related to products from different tables such as product name, manufacturer, suppliers, 
+        product sales in the last 42 days and year, average sales of the product in the last 7 days, 42 days and last year, 
+        category, root category, supplier etc. 
      
      * Also get the quantity of  Ordered, Confirm, Backorder, Received qty per product
      
