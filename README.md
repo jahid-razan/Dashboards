@@ -29,7 +29,7 @@ Step 3 : Gather Products and product Information
  
  Step 4: Calculation steps in SQL: 
  
- * REORDER POINT: As we do not reliable lead time data, the lead time per sales class and supplier is assumed. For details please see the [link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
+ * REORDER POINT: As we do not have reliable lead time data, the lead time per sales class and supplier is assumed. For details please see the [link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
 
 
 * CORRECTED_LEAD_TIME = REORDER POINT x RPF
