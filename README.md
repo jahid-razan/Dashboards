@@ -61,6 +61,7 @@ Step 3 : Gather Products and product Information
 * ORDER QTY SEASONAL: The factor is introduced to adjust the seasonality of high (During Nov-Dec) and low season (Jul-Aug):
 
                  * ORDER QTY SEASONAL = ORDER_QTY_CALC + ORDER_QTY_CALC x SEASONAL CORRECTION FACTOR
+                 
                  * SEASONAL CORRECTION FACTOR can be positive (required before the highe season for instance in October) 
                    or negative (required befor low season for instance in June)
                   
@@ -70,8 +71,7 @@ Step 3 : Gather Products and product Information
             
                           * MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
                           * Note: Ceiling function convert a value to the next upper limit. 
-                          * Example: 
-                          * For a prouct with ORDER QTY SEASONAL = 2 and MOQ = 12 What is the MOQ Unit? 
+                          * Example: For a prouct with ORDER QTY SEASONAL = 2 and MOQ = 12 What is the MOQ Unit? 
                           * MOQ Unit = Ceiling(20/12) 
                                      = Ceiling (1.66)
                                      = 2 
