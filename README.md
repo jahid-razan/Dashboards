@@ -28,6 +28,10 @@ The sql code used to generate the purchase list can be found [here](https://gith
           
 **3-Step 3** : Gather Products and product Information 
 
+     * Select products 
+                     1. ( All products with sales class year: A+, A, B, C, D (Stock magneto < 0). 
+                     2. Exclude all parent products.
+     
      * Gather all the information related to products from different tables such as product name, manufacturer, suppliers, 
         product sales in the last 42 days and year, average sales of the product in the last 7 days, 42 days and last year, 
         category, root category, supplier etc. 
@@ -97,7 +101,11 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 * ACTION: The calculated field can have two possible values:
 
-                        * ORDER:If a produt has ORDER QTY >0 AND the product does not have a EOL/Disconnected (END OF LIFE) supplier The Order the product
+                        * ORDER: When the following two conditions are met:
+                        
+                                1. If a produt has ORDER QTY >0 
+                                2. AND the product does not have a EOL/Disconnected (END OF LIFE) supplier The Order the product
+                                
                         * NO ACTION: If a produt has ORDER QTY = 0 
 
 
