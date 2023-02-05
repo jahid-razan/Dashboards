@@ -67,9 +67,10 @@ Step 3 : Gather Products and product Information
 
 * MOQ Unit: Calculate the number of unit requires to be ordered depending on Minimum Order Quantity. When a product can be ordered as a single unit, 
             then the MOQ = 1.
-                  * MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
-                  * Ceiling function convert a value to the next upper limit. 
-                  * Example: 
+            
+                          * MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
+                          * Note: Ceiling function convert a value to the next upper limit. 
+                          * Example: 
                           * For a prouct with ORDER QTY SEASONAL = 2 and MOQ = 12 What is the MOQ Unit? 
                           * MOQ Unit = Ceiling(20/12) 
                                      = Ceiling (1.66)
