@@ -42,9 +42,13 @@ Step 3 : Gather Products and product Information
 * ORDER QTY (In tableau the quantity is renamed as ORDER_QTY_CALC to indicate the value is from calculation) 
 
          
-         * CASE 1 : WHEN STOCK MAGENTO > 0 THEN ORDER QTY = PRIMARY QTY - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+         * CASE 1 : WHEN STOCK MAGENTO > 0 THEN 
+                        
+                  ORDER QTY = PRIMARY QTY - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
-         * CASE 2: WHEN STOCK MAGENTO <0 THEN ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+         * CASE 2: WHEN STOCK MAGENTO <0 THEN 
+                  
+                  ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
 
 * ORDER QTY SEASONAL = ORDER QTY + ORDER QTY x SEASONAL CORRECTION FACTOR
