@@ -8,7 +8,7 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 * Step 1: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
         
-     RPF = A/ B 
+     RPF =   1 + A/ B 
              A = Summation of the number of days when the stock magento < Number of days x avergae sales per day in the last 42 days
                = Summation of the number of days when the stock magento < 5 x avergae sales per day in the last 42 days
                
@@ -25,7 +25,12 @@ Step 3 : Gather Products and product Information
      * Also get the quantity of  Ordered, Confirm, Backorder, Received qty per product
      
  
- Step 4: Perform Calculations in SQL: 
+ Step 4: Calculation steps in SQL: 
+ 
+ * REORDER POINT: As we do not reliable lead time data, the lead time per sales class and supplier is assumed. For details please see the [link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
+
+
+* CORRECTED_LEAD_TIME = REORDER POINT x RPF
  
 * PRIMARY QTY
 
@@ -33,13 +38,13 @@ Step 3 : Gather Products and product Information
 
                * PRIMARY_QTY = 0
 
-    * CASE 2 - WHEN STOCK MAGENTO <= REORDER POINT: Products have reached the reorder point and required to be ordered.
+    * CASE 2 - Stock Magento <= Reorder Point: Products have reached the reorder point (or lower) and required to be ordered.
               
               * PRIMARY QTY = ORDER DAYS x AVG SALES 
               
  
 
-* ORDER QTY (In tableau the quantity is renamed as ORDER_QTY_CALC to indicate the value is from calculation) 
+* ORDER QTY (In tableau and step 5 the quantity is renamed as ORDER_QTY_CALC to indicate the value is from calculation) 
 
          
          * CASE 1 : WHEN STOCK MAGENTO > 0 THEN 
@@ -51,15 +56,37 @@ Step 3 : Gather Products and product Information
                   ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
 
-* ORDER QTY SEASONAL = ORDER QTY + ORDER QTY x SEASONAL CORRECTION FACTOR
+ Step 5: Calculation steps in Tableau: Following Calculation steps have been made in tableau:
 
-* MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
+* ORDER QTY SEASONAL: The factor is introduced to adjust the seasonality of high (During Nov-Dec) and low season (Jul-Aug):
 
+                 * ORDER QTY SEASONAL = ORDER_QTY_CALC + ORDER_QTY_CALC x SEASONAL CORRECTION FACTOR
+                 * SEASONAL CORRECTION FACTOR can be positive (required before the highe season for instance in October) 
+                   or negative (required befor low season for instance in June)
+                  
+
+* MOQ Unit: Calculate the number of unit requires to be ordered depending on Minimum Order Quantity. When a product can be ordered as a single unit, 
+            then the MOQ = 1.
+                  * MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
+                  * Ceiling function convert a value to the next upper limit. 
+                  * Example: 
+                          * For a prouct with ORDER QTY SEASONAL = 2 and MOQ = 12 What is the MOQ Unit? 
+                          * MOQ Unit = Ceiling(20/12) 
+                                     = Ceiling (1.66)
+                                     = 2 
+                         
 * ORDER QTY =  MOQ Unit x MOQ
+
+                          * Example: For a prouct with MOQ = 12 and MOQ Unit = 2 What is the ORDER QTY : 
+                          * ORDER QTY =  MOQ Unit x MOQ
+                                      = 12 x 2
+                                      = 24
 
 * ORDER VALUE =  PER UNIT COST x ORDER QTY 
 
-* ACTION
+* ACTION: 
+       * ORDER :If a produt has ORDER QTY >0 AND the product does not have a EOL/Disconnected (END OF LIFE) supplier The Order the product
+       * NO ACTION: If a produt has ORDER QTY = 0 
 
 
 #### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
