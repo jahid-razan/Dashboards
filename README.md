@@ -6,7 +6,7 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
-* Step 1: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
+*Step 1*: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
         
              * RPF =   1 + A/ B 
             
