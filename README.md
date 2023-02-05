@@ -95,9 +95,9 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 * ORDER VALUE =  PER UNIT COST x ORDER QTY 
 
-* ACTION: 
-       * ORDER :If a produt has ORDER QTY >0 AND the product does not have a EOL/Disconnected (END OF LIFE) supplier The Order the product
-       * NO ACTION: If a produt has ORDER QTY = 0 
+* ACTION: The calculated field can have two possible values:
+                        * ORDER :If a produt has ORDER QTY >0 AND the product does not have a EOL/Disconnected (END OF LIFE) supplier The Order the product
+                        * NO ACTION: If a produt has ORDER QTY = 0 
 
 
 #### 2. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
