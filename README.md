@@ -29,17 +29,22 @@ Step 3 : Gather Products and product Information
  
 * PRIMARY QTY
 
-    * CASE 1 - WHEN STOCK MAGENTO > REORDER POINT: 
-            * PRIMARY QTY = 0 (Also 0 for super sales items, automatishc uitschakalen items and hidden items)
+    * CASE 1 - Stock Magento > Reorder Point: Products have sufficient stock and do not need to be ordered and hence
 
-    * CASE 2 - WHEN STOCK MAGENTO <= REORDER POINT THEN PRIMARY QTY = ORDER DAYS x AVG SALES 
+               * PRIMARY_QTY = 0
+
+    * CASE 2 - WHEN STOCK MAGENTO <= REORDER POINT: Products have reached the reorder point and required to be ordered.
+              
+              * PRIMARY QTY = ORDER DAYS x AVG SALES 
+              
  
 
-* ORDER QTY CALC
+* ORDER QTY (In tableau the quantity is renamed as ORDER_QTY_CALC to indicate the value is from calculation) 
 
-  * CASE 1 : WHEN STOCK MAGENTO > 0 THEN ORDER QTY = PRIMARY QTY - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+         
+         * CASE 1 : WHEN STOCK MAGENTO > 0 THEN ORDER QTY = PRIMARY QTY - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
-  * CASE 2: WHEN STOCK MAGENTO <0 THEN ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
+         * CASE 2: WHEN STOCK MAGENTO <0 THEN ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
 
 * ORDER QTY SEASONAL = ORDER QTY + ORDER QTY x SEASONAL CORRECTION FACTOR
