@@ -15,6 +15,14 @@ The sql code used to generate the purchase list can be found [here](https://gith
                  = Summation of the number of days when the stock magento < 5 x avergae sales per day in the last 42 days
                
               * B = Time of reference (currently 28 days) 
+              
+              * RPF can have a range : 1 <= RPF <= 2
+              
+              * When the product stock was never critically low then the factor is 1
+              
+              * When the product stock was always critically low (or the product was entirely out of stock) the factor is 2
+
+
 
 * Step 2: Count the number of orders per product within the last 90 days
           
