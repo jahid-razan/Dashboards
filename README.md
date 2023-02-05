@@ -6,7 +6,7 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
-*Step 1*: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
+**1 - Step 1**: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
         
              * RPF =   1 + A/ B 
             
@@ -24,9 +24,9 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 
 
-* Step 2: Count the number of orders per product within the last 90 days
+**2-Step 2**: Count the number of orders per product within the last 90 days
           
-Step 3 : Gather Products and product Information 
+**3-Step 3** : Gather Products and product Information 
 
      * Gather all the information related to products from different tables such as product name, manufacturer, suppliers, 
         product sales in the last 42 days and year, average sales of the product in the last 7 days, 42 days and last year, 
@@ -35,7 +35,7 @@ Step 3 : Gather Products and product Information
      * Also get the quantity of  Ordered, Confirm, Backorder, Received qty per product
      
  
- Step 4: Calculation steps in SQL: 
+ **4-Step 4**: Calculation steps in SQL: 
  
  * REORDER POINT: As we do not have reliable lead time data, the lead time per sales class and supplier is assumed. For details please see the [link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
 
@@ -66,7 +66,7 @@ Step 3 : Gather Products and product Information
                   ORDER QTY = PRIMARY QTY + ABSOLUTE (STOCK MAGENTO) - (ORDERED + CONFIRMED + BACKORDER + RECEIVED) 
 
 
- Step 5: Calculation steps in Tableau: Following Calculation steps have been made in tableau:
+ **5-Step 5**: Calculation steps in Tableau: Following Calculation steps have been made in tableau:
 
 * ORDER QTY SEASONAL: The factor is introduced to adjust the seasonality of high (During Nov-Dec) and low season (Jul-Aug):
 
