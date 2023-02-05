@@ -8,11 +8,13 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 * Step 1: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than a threshold amount of stock (currently 5 days) 
         
-     RPF =   1 + A/ B 
-             A = Summation of the number of days when the stock magento < Number of days x avergae sales per day in the last 42 days
-               = Summation of the number of days when the stock magento < 5 x avergae sales per day in the last 42 days
+             * RPF =   1 + A/ B 
+            
+             * A = Summation of the number of days when the stock magento < Number of days x avergae sales per day in the last 42 days
+                 
+                 = Summation of the number of days when the stock magento < 5 x avergae sales per day in the last 42 days
                
-             B = Time of reference (currently 28 days) 
+              * B = Time of reference (currently 28 days) 
 
 * Step 2: Count the number of orders per product within the last 90 days
           
