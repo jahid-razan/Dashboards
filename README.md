@@ -94,8 +94,8 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
                           * Example: For a prouct with MOQ = 12 and MOQ Unit = 2 What is the ORDER QTY : 
                           * ORDER QTY =  MOQ Unit x MOQ
-                                      = 12 x 2
-                                      = 24
+                                      =  2 x 12
+                                      =  24
 
 * ORDER VALUE =  PER UNIT COST x ORDER QTY 
 
