@@ -165,38 +165,8 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
   
-
-  * Marketing Cost ( applicable only for Product_Id >0):  
-    
-     
-     * Marketing Cost per order (for webchannels) =  Marketing cost percentage for a channel (from tableau parameter) * line_total_ex_vat 
-     
-     * For bol products a specific percentage is assigned per product. The data per product is available on the following table: *hbl-online.purchase_queries.Jahid_bol_commission*
-     
-     * For ManoMano products from DeWALT, Makita, Metabo, Bosch, HiKOKI, and Hitachi have 12% of the line_total_ex_vat. The rest of the brands have 13% of the line_total_ex_vat
-     
-     * Amazon has a marketing cost of 13.48% of the line_total_ex_vat
-      
-  * Payment Cost: A percentage of revenue is assigned per channel through tableau parameter, no payment cost is applicable for marketplaces. Payment cost is only applicable for revenue >0 
   
-      * Payment Cost =  Revenue Applicable For Payment Cost from the web channel x line_total_ex_vat 
-      
-  
-  * WH Cost
-    
-    * WH cost per order =  WH cost per_orderline (through tableau parameter) x Order Lines of a specific order
-    * Order Line of a specific order: Sum of non zero product ids per order
-    * WH Cost Per Product = Number of Orders Per Product x WH cost per orderline 
-  
-  * RMA Cost:
-     * RMA Cost Per Order = Line total Ex Vat per Order x % RMA Cost Per Channel (from tableau parameter)
-     * RMA Cost Per Product = Line total Ex Vat per product x % RMA Cost Per Channel (from tableau parameter)
-  
-  * Shipping Cost: assigned per country, per shipping method, per orderline (hardcoded in the tableau order level shipping cost per order filed) 
-
-  The details of the shipping cost per channel per method can be found on [table t4 in the sql code](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql)
-  
-  For non pallets shipping the shipping cost depends on the order line. Orderline to calculate the shipping cost is defined in tableau calculated field (name of the field: Single_Or_Multi_Line) 
+  ![](CM cost details.PNG)
   
   The definition is based on the following logic: Without considering the negative product ids:
   
