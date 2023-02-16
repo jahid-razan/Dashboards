@@ -167,6 +167,8 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   
   ![](CM_cost_details.PNG)
   
+  ![](definition.PNG)
+  
   The definition is based on the following logic: Without considering the negative product ids:
   
   * If an order has 1 product id and a single quantity is sold then it is a Single line order
