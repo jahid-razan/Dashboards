@@ -165,7 +165,6 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
   
-  
   ![](CM cost details.PNG)
   
   The definition is based on the following logic: Without considering the negative product ids:
