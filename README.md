@@ -165,6 +165,14 @@ To calculate the total number of orders shipped in 0-1 day the following logic i
 
 The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/CM_calculation.sql). The sql code used in the query editor in tableau. 
   
+Following definitions are important to understand the CM concept:
+
+
+  * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
+  
+  * CM per Order = Margin Total Net -  Total Cost
+  
+  
   ![](CM_cost_details.PNG)
   
   ![](definition.PNG)
@@ -175,18 +183,10 @@ The sql code can be found [here](https://github.com/jahidrazan/Codes/blob/main/C
   * If an order has 1 product id and more than a single quantity is sold then it is a Single line order
   * If an order has more than 1 product id and more than a single quantity is sold then it is a Multi line order
   
-  Depending on the 
+  Shipping cost factors based on order lines are listed below:  
    
   ![](shipping_cost_factors_per_channel.PNG)
-  
-  * RMA related Shipping Cost
-  
-      * RMA related Shipping Cost = Shipping Cost x % RMA Impact on Shipping Cost (from tableau parameter)
-        
-  * Total Cost = CS Cost + Marketing Cost + Payment Cost + WH Cost + RMA Cost + RMA related Shipping Cost
-  
-  * CM per Order = Margin Total Net -  Total Cost
-  
+
 # 2. Conceptual ERD
 The Conceptual ERD is a good starting point to understand the relationship between products table and other associated information related to products:
 
