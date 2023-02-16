@@ -177,11 +177,13 @@ Following definitions are important to understand the CM concept:
   
   ![](definition.PNG)
   
-  The definition is based on the following logic: Without considering the negative product ids:
+  The definition of order line details used for shipping cost factors:
   
-  * If an order has 1 product id and a single quantity is sold then it is a Single line order
-  * If an order has 1 product id and more than a single quantity is sold then it is a Single line order
-  * If an order has more than 1 product id and more than a single quantity is sold then it is a Multi line order
+  Without the product_id <0: 
+  
+  * If an order has 1 product id, and a single quantity is sold then it is a 'Single-line' order
+  * If an order has 1 product id, and more than a single quantity is sold then it is a 'Single-line plus' order
+  * If an order has more than 1 product id and more than a single quantity is sold then it is a 'Multi-line' order
   
   Shipping cost factors based on order lines are listed below:  
    
