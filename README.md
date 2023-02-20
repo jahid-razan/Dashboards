@@ -12,7 +12,7 @@ The sql code used to generate the purchase list can be found [here](https://gith
             
              * A = Summation of the number of days when the stock magento < Number of days for Safety Stock x avergae sales per day in the last 42 days
                  
-                 = Summation of the number of days when the stock magento < 5 x avergae sales per day in the last 42 days
+                 = Summation of the number of days when the stock magento < 10 x avergae sales per day in the last 42 days
                
               * B = Time of reference (currently 28 days) 
               
