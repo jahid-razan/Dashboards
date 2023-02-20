@@ -36,7 +36,7 @@ The sql code used to generate the purchase list can be found [here](https://gith
         product sales in the last 42 days and year, average sales of the product in the last 7 days, 42 days and last year, 
         category, root category, supplier etc. 
      
-     * Also, get the quantity of Ordered, Confirm, Backorder, Received quantities per product
+     * Also, get the Ordered, Confirm, Backorder, Received quantities per product
      
  
  **4-Step 4**: Calculation steps in SQL: 
