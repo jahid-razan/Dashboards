@@ -6,22 +6,19 @@ Below is a list of the dashbaord/report that are currently in use by the purchas
 
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
-**1 - Step 1**: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than the safety stock (the days of safety stock is a variable) 
+**1 - Step 1**: Calculate reorder point factors (RPF): that tells us within the last 28 days, for how many days the product had less than the safety stock. Here, Number of days for Safety Stock = 10 
         
              * RPF =   1 + A/ B 
             
-             * A = Summation of the number of days when the stock magento < Number of days for Safety Stock x avergae sales per day in the last 42 days
+             * A = Summation of the number of days when the stock magento < (Number of days for Safety Stock x avergae sales per day in the last 42 days)
                  
                  = Summation of the number of days when the stock magento < 10 x avergae sales per day in the last 42 days
+                 
                
               * B = Time of reference (currently 28 days) 
               
               * RPF can have a range : 1 <= RPF <= 2
               
-              * When the product stock was never critically low then the factor is 1
-              
-              * When the product stock was always critically low (or the product was entirely out of stock) the factor is 2
-
 
 
 **2-Step 2**: Count the number of orders per product within the last 90 days
