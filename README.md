@@ -82,14 +82,14 @@ The sql code used to generate the purchase list can be found [here](https://gith
             
                           * MOQ Unit = CEILING (ORDER QTY SEASONAL /MOQ)
                           * Note: Ceiling function convert a value to the next upper limit. 
-                          * Example: For a prouct with ORDER QTY SEASONAL = 20 and MOQ = 12 What is the MOQ Unit? 
+                          * Example: For a product with ORDER QTY SEASONAL = 20 and MOQ = 12 What is the MOQ Unit? 
                           * MOQ Unit = Ceiling(20/12) 
                                      = Ceiling (1.66)
                                      = 2 
                          
 * ORDER QTY =  MOQ Unit x MOQ
 
-                          * Example: For a prouct with MOQ = 12 and MOQ Unit = 2 What is the ORDER QTY : 
+                          * Example: For a product with MOQ = 12 and MOQ Unit = 2 What is the ORDER QTY : 
                           * ORDER QTY =  MOQ Unit x MOQ
                                       =  2 x 12
                                       =  24
