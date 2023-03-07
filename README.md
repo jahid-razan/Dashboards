@@ -224,7 +224,7 @@ Most problems related to product stock (and the purchase department) can be solv
 
 2. Lamp purchase for 2022. [Code link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_lamps_2022.sql)
 
-3. Bladblazed Sales for 2022 [Code Link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Bladblazer_2022.sql)
+3. Bladblazer Sales for 2022 [Code Link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Bladblazer_2022.sql)
 
 4. Code for legal team to report total sales value for NL [Code link](https://github.com/jahidrazan/Codes/blob/main/Query_purchase_value_per_Cat_NL_2022_for_legal_team.sql)
 
