@@ -220,7 +220,7 @@ Most problems related to product stock (and the purchase department) can be solv
 
 # 4. Other codes used to estimate purchase qty
 
-1. Festool Purchase qty for 160 days: change the number of days as appropriate follwoing the comment in the code. [Code link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Festool.sql)
+1. Festool Purchase qty for 160 days: change the number of days as appropriate follwoing the comment in the code. [Code link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Festool.sql). The code can be adapted for other brands as well changing the Brand name.
 
 2. Lamp purchase for 2022. [Code link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_lamps_2022.sql)
 
