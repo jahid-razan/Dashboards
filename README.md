@@ -206,7 +206,7 @@ The Conceptual ERD is a good starting point to understand the relationship betwe
 
 
 
-# 2. DATA MODELS
+# 3. DATA MODELS
 
 Most problems related to product stock (and the purchase department) can be solved by joining the api tables.  
 
@@ -218,7 +218,7 @@ Most problems related to product stock (and the purchase department) can be solv
 ![](purchase_table_and_products_ERD.PNG) 
 
 
-# Other codes used to estimate purchase qty
+# 4. Other codes used to estimate purchase qty
 
 1. Festool Purchase qty for 160 days: change the number of days as appropriate follwoing the comment in the code. [Code link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Festool.sql)
 
@@ -227,7 +227,7 @@ Most problems related to product stock (and the purchase department) can be solv
 3. Bladblazed Sales for 2022 [Code Link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Bladblazer_2022.sql)
 
 
-# 4. Summary of Purchase Process & ERD
+# 5. Summary of Purchase Process & ERD
 
 1. [Introduction to Purchase- Part 1 of Video](https://hblvof-my.sharepoint.com/:v:/g/personal/jahid_islamrazan_fixami_com/EZjph121aDRBrD6pDQ9_kxkBQuy8hTnD1TXIvmuoI_Ms-w?e=dj3ECo), [PPT Link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/ES2GRALKJ99BouBgLvL8tOYBW3KHcMtm33ZC97xZE8eJvw?e=4htlxX)
 2. [Introduction to Purchase-Part 2 of Video](https://hblvof-my.sharepoint.com/:v:/g/personal/jahid_islamrazan_fixami_com/Ea2bKQW8hTpInIflVgq8_jUBNaowyQr8KO7fJX1um2bVvQ?e=293LRr), [PPT Link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
