@@ -226,6 +226,10 @@ Most problems related to product stock (and the purchase department) can be solv
 
 3. Bladblazed Sales for 2022 [Code Link](https://github.com/jahidrazan/Codes/blob/main/Expected_sales_Bladblazer_2022.sql)
 
+4. Code for legal team to report total sales value for NL [Code link](https://github.com/jahidrazan/Codes/blob/main/Query_purchase_value_per_Cat_NL_2022_for_legal_team.sql)
+
+5. Code for legal team to report child qty shipped in FR and NL [Code link](https://github.com/jahidrazan/Codes/blob/main/Query_for_legal_team_for_shipped_child_qty_FR_NL_2022.sql)
+
 
 # 5. Summary of Purchase Process & ERD
 
