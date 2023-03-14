@@ -39,6 +39,8 @@ The sql code used to generate the purchase list can be found [here](https://gith
  **4-Step 4**: Calculation steps in SQL: 
  
  * REORDER POINT: As we do not have reliable lead time data, the lead time per sales class and supplier is assumed. For details please see the [link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
+ *  For the products with minimum desired stock if the value from calculation (i.e. CORRECTED LEAD TIME x AVG SALES LAST 42 DAYS) is less than the 
+                minimum desired stock then take the minimum desired stock. If the calculated qunatity is > minimum desired stock than take the calculated qty
 
 
 * CORRECTED_LEAD_TIME = REORDER POINT x RPF
@@ -52,6 +54,8 @@ The sql code used to generate the purchase list can be found [here](https://gith
     * CASE 2 - Stock Magento <= Reorder Point: Products have reached the reorder point (or lower) and required to be ordered.
               
               * PRIMARY QTY = ORDER DAYS x AVG SALES 
+              * In CASE 2 : For the products with minimum desired stock if the value from calculation (i.e. ORDER DAYS x AVG SALES) is less than the 
+                minimum desired stock then take the minimum desired stock. If the calculated qunatity is > minimum desired stock than take the calculated qty
               
  
 
