@@ -2,7 +2,7 @@
 
 Below is a list of the dashbaord/report that are currently in use by the purchase and category management team. 
 
-#### 1. [Purchase list] V1(https://dub01.online.tableau.com/#/site/hblonlinesite/views/Purchase_list/product_list?:iid=3) and [total order value per sales class](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Purchase_list/total_order_value?:iid=6) dashboard. 
+#### 1.[Purchase list 1.0](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Purchase_list/product_list?:iid=3) and [total order value per sales class](https://dub01.online.tableau.com/#/site/hblonlinesite/views/Purchase_list/total_order_value?:iid=6) dashboard. 
 
 The sql code used to generate the purchase list can be found [here](https://github.com/jahidrazan/Codes/blob/main/purchase_list.sql). The code is also used in the query editor in tableau. 
 
@@ -108,6 +108,14 @@ The sql code used to generate the purchase list can be found [here](https://gith
                                 2. AND the product does not have a EOL(END OF LIFE)/Disconnected supplier The Order the product
                                 
                         * NO ACTION: If a product has ORDER QTY = 0 
+
+
+#### 2.[Purchase list 2.0]:
+
+* Differences are : Integration of the seasonal products along with the non-seasonal items with minimum desired stock
+* Hidden products also have primary qty 
+* For [See here details descriptions of the columns ](https://hblvof-my.sharepoint.com/:w:/g/personal/jahid_islamrazan_fixami_com/EfRMhfoCHN1Hr1NxoH9X09kBYE_o4d1UqDm-nCk8dn2Xzw?e=8xpS7S).
+
 
 
 #### 3. [Purchase Overview Dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) and [out of stock products](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purchase_overview_dashboard/PurchaseOverview?:iid=1) dashboard. (Documentation Status: Complete)
