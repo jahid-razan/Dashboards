@@ -112,7 +112,8 @@ The sql code used to generate the purchase list can be found [here](https://gith
 
 #### 2.[Purchase list 2.0]:
 
-* Differences are : Integration of the seasonal products along with the non-seasonal items with minimum desired stock
+* Differences are: Integration of the seasonal products along with the non-seasonal items with minimum desired stock
+* Some Key Values are parameterized in the [dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purcashe_list_2_0/DASHBOARDTOTALORDERVALUE?:iid=1) instead of hardcode.
 * Hidden products also have primary qty 
 * For [See here details descriptions of the columns ](https://hblvof-my.sharepoint.com/:w:/g/personal/jahid_islamrazan_fixami_com/EfRMhfoCHN1Hr1NxoH9X09kBYE_o4d1UqDm-nCk8dn2Xzw?e=8xpS7S).
 
