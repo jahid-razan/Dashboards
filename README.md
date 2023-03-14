@@ -110,7 +110,7 @@ The sql code used to generate the purchase list can be found [here](https://gith
                         * NO ACTION: If a product has ORDER QTY = 0 
 
 
-#### 2.[Purchase list 2.0]:
+#### 2.[Purchase list 2.0](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purcashe_list_2_0/DASHBOARDTOTALORDERVALUE?:iid=1):
 
 * Differences are: Integration of the seasonal products along with the non-seasonal items with minimum desired stock
 * Some Key Values are parameterized in the [dashboard](https://dub01.online.tableau.com/#/site/hblonlinesite/views/purcashe_list_2_0/DASHBOARDTOTALORDERVALUE?:iid=1) instead of hardcode.
