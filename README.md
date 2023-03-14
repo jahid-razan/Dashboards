@@ -250,22 +250,22 @@ Most problems related to product stock (and the purchase department) can be solv
                                      2. minimum desired qty
                                      3. Start Date: When does the purchase beings
                                      4. End date: : When does the purchase ends
-                                     5. Product Description: Seasonal or not (RIck owns the seasonal products while Ricardo owns the non-seasonal products)
+                                     5. Product Description: Seasonal or not (Rick owns the seasonal products while Ricardo owns the non-seasonal products)
                                      
-3. [Minimum Desired Qty for purchase list 1.0 ](https://docs.google.com/spreadsheets/d/1tH55-qQ31fAhl8QVSLemnltydckm99Aadj7Zi3KHIiw/edit?usp=sharing)
+2. [Minimum Desired Qty for purchase list 1.0 ](https://docs.google.com/spreadsheets/d/1tH55-qQ31fAhl8QVSLemnltydckm99Aadj7Zi3KHIiw/edit?usp=sharing)
  Columns are (From left to right):   1. Product id
                                      2. minimum desired qty
 
-6. [Minimum Order Qty to Calculate MOQ](https://docs.google.com/spreadsheets/d/1aGMu-5H-ZdrKKCzJehSCvkLsJPhPZ2PR-mL4TVIwsL0/edit?usp=sharing)
+3. [Minimum Order Qty to Calculate MOQ](https://docs.google.com/spreadsheets/d/1aGMu-5H-ZdrKKCzJehSCvkLsJPhPZ2PR-mL4TVIwsL0/edit?usp=sharing)
 
  Columns are (From left to right):   1. Product id
                                      2. minimum order qty
 
-8. [Bol Products Marketing Cost commission](https://docs.google.com/spreadsheets/d/1yI5Ef8KOCwClKjthKnYgzHoY-lnuKtF4WMkuS6VdYvw/edit#gid=0)
+4. [Bol Products Marketing Cost commission](https://docs.google.com/spreadsheets/d/1yI5Ef8KOCwClKjthKnYgzHoY-lnuKtF4WMkuS6VdYvw/edit#gid=0)
 Columns are (From left to right): 1. Product id 
                                   2. Commission % (5.8% has been made 0.058 after dividing it by 100)
                                   
-10.  Automatisch Uitschkelen items & Super Sales: will not be added since as these items changes frequnctly and can be obtained from CATMATN.
+5. Automatisch Uitschkelen items & Super Sales: will not be added since as these items changes frequnctly and can be obtained from CATMATN.
 
 # 6. Summary of Purchase Process & ERD
 
