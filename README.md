@@ -243,7 +243,7 @@ Most problems related to product stock (and the purchase department) can be solv
 
 5. Code for legal team to report child qty shipped in FR and NL [Code link](https://github.com/jahidrazan/Codes/blob/main/Query_for_legal_team_for_shipped_child_qty_FR_NL_2022.sql)
 
-# 5. Excel Files Used in to create temporary tables:
+# 5. Excel Files Used in to create temporary tables
 
 1. [Minimum Desired Qty for purchase list 2.0 ](https://docs.google.com/spreadsheets/d/1hCO-6F9hUbj7lqVRCmU9lKYsu6uvOSoINO2O7A7XTE0/edit?usp=sharing)
    Columns are (From left to right): 1. Product id
