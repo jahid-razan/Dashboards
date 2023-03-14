@@ -243,8 +243,31 @@ Most problems related to product stock (and the purchase department) can be solv
 
 5. Code for legal team to report child qty shipped in FR and NL [Code link](https://github.com/jahidrazan/Codes/blob/main/Query_for_legal_team_for_shipped_child_qty_FR_NL_2022.sql)
 
+# 5. Excel Files Used in to create temporary tables:
 
-# 5. Summary of Purchase Process & ERD
+1. [Minimum Desired Qty for purchase list 2.0 ](https://docs.google.com/spreadsheets/d/1hCO-6F9hUbj7lqVRCmU9lKYsu6uvOSoINO2O7A7XTE0/edit?usp=sharing)
+   Columns are (From left to right): 1. Product id
+                                     2. minimum desired qty
+                                     3. Start Date: When does the purchase beings
+                                     4. End date: : When does the purchase ends
+                                     5. Product Description: Seasonal or not (RIck owns the seasonal products while Ricardo owns the non-seasonal products)
+                                     
+3. [Minimum Desired Qty for purchase list 1.0 ](https://docs.google.com/spreadsheets/d/1tH55-qQ31fAhl8QVSLemnltydckm99Aadj7Zi3KHIiw/edit?usp=sharing)
+ Columns are (From left to right):   1. Product id
+                                     2. minimum desired qty
+
+6. [Minimum Order Qty to Calculate MOQ](https://docs.google.com/spreadsheets/d/1aGMu-5H-ZdrKKCzJehSCvkLsJPhPZ2PR-mL4TVIwsL0/edit?usp=sharing)
+
+ Columns are (From left to right):   1. Product id
+                                     2. minimum order qty
+
+8. [Bol Products Marketing Cost commission](https://docs.google.com/spreadsheets/d/1yI5Ef8KOCwClKjthKnYgzHoY-lnuKtF4WMkuS6VdYvw/edit#gid=0)
+Columns are (From left to right): 1. Product id 
+                                  2. Commission % (5.8% has been made 0.058 after dividing it by 100)
+                                  
+10.  Automatisch Uitschkelen items & Super Sales: will not be added since as these items changes frequnctly and can be obtained from CATMATN.
+
+# 6. Summary of Purchase Process & ERD
 
 1. [Introduction to Purchase- Part 1 of Video](https://hblvof-my.sharepoint.com/:v:/g/personal/jahid_islamrazan_fixami_com/EZjph121aDRBrD6pDQ9_kxkBQuy8hTnD1TXIvmuoI_Ms-w?e=dj3ECo), [PPT Link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/ES2GRALKJ99BouBgLvL8tOYBW3KHcMtm33ZC97xZE8eJvw?e=4htlxX)
 2. [Introduction to Purchase-Part 2 of Video](https://hblvof-my.sharepoint.com/:v:/g/personal/jahid_islamrazan_fixami_com/Ea2bKQW8hTpInIflVgq8_jUBNaowyQr8KO7fJX1um2bVvQ?e=293LRr), [PPT Link](https://hblvof-my.sharepoint.com/:p:/g/personal/jahid_islamrazan_fixami_com/EVH60VtfrUVFhEA7izUUEaoB4aa-uTFFi42QlkCH9RhxaA?e=bLb8Mg)
